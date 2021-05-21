@@ -1,3 +1,12 @@
-// Run `node index.js` in the terminal
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+import App from './App';
+
+const rootElement = document.getElementById('root');
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
+);
